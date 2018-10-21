@@ -17,6 +17,8 @@ ser1 = Series([1,2,3,4],index = ['A','B','C','D'])
 ser1
 
 
+# Reindexing allows you to rearrange the data according to a different index. You can also set a value to fill in the new indexes.
+
 # In[3]:
 
 
@@ -50,6 +52,8 @@ ranger
 ranger
 
 
+# Using forward fill
+
 # In[9]:
 
 
@@ -63,6 +67,8 @@ dframe = DataFrame(randn(25).reshape((5,5)),index=['A','B','D','E','F'],columns=
 dframe
 
 
+# Reindexing to add a row
+
 # In[13]:
 
 
@@ -74,6 +80,8 @@ dframe2 = dframe.reindex(['A','B','C','D','E','F'])
 
 dframe2
 
+
+# Reindexing to add a column
 
 # In[15]:
 

@@ -28,6 +28,8 @@ my_index = my_ser.index
 my_index
 
 
+# You can call an index or an index range
+
 # In[5]:
 
 
@@ -45,6 +47,8 @@ my_index[2:]
 
 my_index[0]
 
+
+# Indexed are immutable. You can't change index values
 
 # In[8]:
 

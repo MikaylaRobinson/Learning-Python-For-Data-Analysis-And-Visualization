@@ -11,6 +11,8 @@ import pandas as pd
 from pandas import Series, DataFrame
 
 
+# Make a series and show the values and the index
+
 # In[5]:
 
 
@@ -29,6 +31,8 @@ obj.values
 
 obj.index
 
+
+# Making a series with an index. Then call series values using index values. Then call values using array operations
 
 # In[8]:
 
@@ -55,12 +59,16 @@ ww2_cas[ww2_cas > 4000000]
 'USSR' in ww2_cas
 
 
+# Change a series into a dictionary 
+
 # In[12]:
 
 
 ww2_dict = ww2_cas.to_dict()
 ww2_dict
 
+
+# Change a dictionary into a series
 
 # In[13]:
 
@@ -81,6 +89,8 @@ countries = ['China','Germany','Japan','USA','USSR','Argentina']
 obj2 = Series(ww2_dict, index=countries)
 obj2
 
+
+# isnull and notnull are useful for finding missing data
 
 # In[16]:
 
@@ -106,11 +116,15 @@ ww2_series
 obj2
 
 
+# Pandas will do addition based on index
+
 # In[20]:
 
 
 ww2_series + obj2
 
+
+# Names for the series and index will appear in the output
 
 # In[21]:
 

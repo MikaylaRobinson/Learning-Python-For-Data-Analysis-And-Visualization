@@ -29,16 +29,12 @@ nfl_frame = pd.read_clipboard()
 nfl_frame
 
 
+# Using .columns, the output is a list of all column names
+
 # In[10]:
 
 
 nfl_frame.columns
-
-
-# In[19]:
-
-
-nfl_frame.GP
 
 
 # In[20]:
@@ -53,6 +49,8 @@ nfl_frame.columns = nfl_frame.columns.str.strip()
 nfl_frame.columns
 
 
+# There are two ways to call the data from a particular column. DataFrame_name.column_name or DataFrame_name['column_name']
+
 # In[23]:
 
 
@@ -64,6 +62,8 @@ nfl_frame.Team
 
 nfl_frame['First NFL Season']
 
+
+# Calling more than one column
 
 # In[25]:
 
@@ -83,6 +83,8 @@ DataFrame(nfl_frame,columns=['Team','First NFL Season','Stadium'])
 nfl_frame
 
 
+# Calling the first 3 rows and then the last 3 rows
+
 # In[28]:
 
 
@@ -95,11 +97,15 @@ nfl_frame.head(3)
 nfl_frame.tail(3)
 
 
+# Indexing also gives rows as the output
+
 # In[30]:
 
 
 nfl_frame.ix[3]
 
+
+# Assigning this value for stadium will assign it for all rows
 
 # In[31]:
 
@@ -125,6 +131,8 @@ nfl_frame['Stadium'] = np.arange(5)
 nfl_frame
 
 
+# You can add a series to a DataFrame to assign values to only specific rows
+
 # In[35]:
 
 
@@ -149,6 +157,8 @@ nfl_frame['Stadium'] = stadiums
 nfl_frame
 
 
+# Deleting a column from a DataFrame
+
 # In[40]:
 
 
@@ -160,6 +170,8 @@ del nfl_frame['Stadium']
 
 nfl_frame
 
+
+# Making a DataFrame using a dictionary
 
 # In[42]:
 
